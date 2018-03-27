@@ -1,8 +1,0 @@
-filename = "db_ohnedich_stage-2014-03-09_19-27-26"
-description = ""
-datestamp = "1394389650"
-generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
-generatorversion = "7.x-2.x"
-sites[0][version] = "7.26"
-sites[0][name] = "Ohne dich..."
-sites[0][url] = "http://ohnedich.ch/"
