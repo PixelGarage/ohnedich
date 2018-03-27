@@ -1,0 +1,55 @@
+/*
+ * responsive.custom.css is for custom media queries that are not set via the
+ * theme settings, such as cascading media queries.
+ *
+ * By default all the other responsive stylesheets used in Adaptivetheme use a
+ * "stacking method", however cascading media queries use a waterfall method so
+ * you can leverage the cascade and inheritance for all browsers that support
+ * media queries, regardless of screen size.
+ *
+ * @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack
+ *
+ * NOTE: this file loads by default, to disable got to your theme settings and
+ * look under the "CSS" settings tab.
+ */
+
+/*
+ *  Small range size overlapped (< 520px)
+ */
+@media only screen and (max-width: 32.5em) {
+    body.page-ohnedich-panel {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 48em) {
+    .node-ohne-dich.node-full .group-image-quote .field-name-field-person-links,
+    .node-ohne-dich.node-full .group-image-quote .field-name-field-person-rechts,
+    .node-ohne-dich.node-full .group-image-quote .field-name-field-quote {
+        font-size: 3vw; /* % of viewport width */
+    }
+    .node-ohne-dich.node-full .region-two-50-second .field-type-text {
+        font-size: 2.5vw; /* % of viewport width */
+    }
+    .node-ohne-dich.node-full .field-name-sharethis-block {
+        font-size: 2.5vw; /* % of viewport width */
+    }
+}
+
+@media only screen and (min-width: 80.0625em) {
+    body {
+        font-size: 100%;
+    }
+
+    .node-ohne-dich.node-full .group-image-quote .field-name-field-person-links,
+    .node-ohne-dich.node-full .group-image-quote .field-name-field-person-rechts,
+    .node-ohne-dich.node-full .group-image-quote .field-name-field-quote {
+        font-size: 1.2em; /* font size fix */
+    }
+    .node-ohne-dich.node-full .region-two-50-second .field-type-text {
+        font-size: 1.2em; /* font size fix */
+    }
+    .node-ohne-dich.node-full .field-name-sharethis-block {
+        font-size: 1em; /* font size fix */
+    }
+}
